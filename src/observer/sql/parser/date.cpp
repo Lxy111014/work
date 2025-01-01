@@ -1,5 +1,4 @@
 #include "date.h"
-
 #include "common/lang/comparator.h"
 #include "common/log/log.h"
 #include <cstdio>
@@ -56,19 +55,26 @@ static std::string trans(char c, struct tm &tm) {
     std::string ret;
     if (t / 10 == 1) {
       ret = "th";
-    } else if (t % 10 == 1) {
+    }
+     else if (t % 10 == 1) {
       ret = "st";
-    } else if (t % 10 == 2) {
+    }
+     else if (t % 10 == 2) {
       ret = "nd";
-    } else if (t % 10 == 3) {
+    }
+     else if (t % 10 == 3) {
       ret = "rd";
-    } else {
+    }
+     else {
       ret = "th";
     }
+    
     return std::to_string(t) + ret;
   }
+
   default: LOG_WARN("unsupported format char %%%c", c);
   }
+
   return std::string(1, c);
 }
 

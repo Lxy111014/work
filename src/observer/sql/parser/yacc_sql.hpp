@@ -175,11 +175,14 @@ union YYSTYPE
 
 #line 177 "yacc_sql.hpp"
 
+
 };
+
 typedef union YYSTYPE YYSTYPE;
 # define YYSTYPE_IS_TRIVIAL 1
 # define YYSTYPE_IS_DECLARED 1
 #endif
+
 
 /* Location type.  */
 #if ! defined YYLTYPE && ! defined YYLTYPE_IS_DECLARED

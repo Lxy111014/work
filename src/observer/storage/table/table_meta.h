@@ -39,6 +39,8 @@ public:
 
   RC add_index(const IndexMeta &index);
 
+
+   
   RC drop_index(const char *index_name);
 
 public:

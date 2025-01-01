@@ -11,10 +11,8 @@ See the Mulan PSL v2 for more details. */
 //
 // Created by Meiyi & Wangyunlai on 2021/5/12.
 //
-
 #include <algorithm>
 #include <common/lang/string.h>
-
 #include "common/log/log.h"
 #include "sql/parser/value.h"
 #include "storage/field/field.h"
@@ -22,7 +20,9 @@ See the Mulan PSL v2 for more details. */
 #include "storage/trx/trx.h"
 #include "json/json.h"
 
+
 using namespace std;
+
 
 static const Json::StaticString FIELD_TABLE_ID("table_id");
 static const Json::StaticString FIELD_TABLE_NAME("table_name");
@@ -104,15 +104,19 @@ RC TableMeta::add_index(const IndexMeta &index) {
   return RC::SUCCESS;
 }
 
+
 RC TableMeta::drop_index(const char *index_name) {
-  for (int i = 0; i < indexes_.size(); i++) {
+
+    for (int i = 0; i < indexes_.size(); i++) {
     if (strcmp(indexes_[i].name(), index_name) == 0) {
       indexes_.erase(indexes_.begin() + i);
       return RC::SUCCESS;
     }
   }
+
   return RC::SCHEMA_INDEX_NOT_EXIST;
 }
+
 
 const char *TableMeta::name() const { return name_.c_str(); }
 

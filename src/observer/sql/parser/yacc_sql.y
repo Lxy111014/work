@@ -702,11 +702,13 @@ having:
     }
     ;
 
+
 groupby:
     {
       $$ = nullptr;
     }
     | GROUP BY rel_attr rel_attr_list 
+
     {
       $$ = $4;
       if ($$ == nullptr) {
@@ -715,6 +717,7 @@ groupby:
       $$->push_back($3);
       std::reverse($$->begin(), $$->end());
     }
+
 
 orderby:
     {
@@ -736,6 +739,7 @@ order_unit_list:
       $$ = $3;
       $$->push_back($1);
     }
+
 
 order_unit:
     rel_attr order {

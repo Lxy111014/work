@@ -69,6 +69,7 @@ RC BplusTreeIndex::close() {
     index_handler_.close();
     inited_ = false;
   }
+  
   LOG_INFO("Successfully close index.");
   return RC::SUCCESS;
 }
@@ -85,6 +86,7 @@ char *BplusTreeIndex::make_key(const char *record) {
 
 RC BplusTreeIndex::insert_entry(const char *record, const RID *rid) {
   char *data = make_key(record);
+  
   RC rc = index_handler_.insert_entry(data, rid);
   free(data);
   return rc;

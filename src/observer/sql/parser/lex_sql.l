@@ -115,9 +115,12 @@ FLOAT                                   RETURN_TOKEN(FLOAT_T);
 DATE                                    RETURN_TOKEN(DATE_T);
 TEXT                                    RETURN_TOKEN(TEXT_T);
 LOAD                                    RETURN_TOKEN(LOAD);
+
 DATA                                    RETURN_TOKEN(DATA);
+
 INFILE                                  RETURN_TOKEN(INFILE);
 EXPLAIN                                 RETURN_TOKEN(EXPLAIN);
+
 MIN                                     RETURN_TOKEN(MIN);
 MAX                                     RETURN_TOKEN(MAX);
 AVG                                     RETURN_TOKEN(AVG);
@@ -130,7 +133,9 @@ ASC                                     RETURN_TOKEN(ASC);
 HAVING                                  RETURN_TOKEN(HAVING);
 LENGTH                                  RETURN_TOKEN(LENGTH);
 ROUND                                   RETURN_TOKEN(ROUND);
+
 DATE_FORMAT                             RETURN_TOKEN(DATE_FORMAT);
+
 INNER                                   RETURN_TOKEN(INNER);
 JOIN                                    RETURN_TOKEN(JOIN);
 NOT                                     RETURN_TOKEN(NOT);

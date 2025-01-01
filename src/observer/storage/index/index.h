@@ -59,7 +59,6 @@ public:
 
   /**
    * @brief 创建一个索引数据的扫描器
-   * 
    * @param left_key 要扫描的左边界
    * @param left_len 左边界的长度
    * @param left_inclusive 是否包含左边界
@@ -77,9 +76,11 @@ public:
   virtual RC sync() = 0;
 
 protected:
+
   RC init(const IndexMeta &index_meta);
 
 protected:
+
   IndexMeta index_meta_; ///< 索引的元数据
   int size_;             ///<
 };
@@ -89,6 +90,7 @@ protected:
  * @ingroup Index
  */
 class IndexScanner {
+
 public:
   IndexScanner() = default;
   virtual ~IndexScanner() = default;
@@ -98,5 +100,6 @@ public:
    * 如果没有更多的元素，返回RECORD_EOF
    */
   virtual RC next_entry(RID *rid) = 0;
+
   virtual RC destroy() = 0;
 };

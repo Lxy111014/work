@@ -19,7 +19,6 @@ See the Mulan PSL v2 for more details. */
 #include <string>
 #include <utility>
 #include <vector>
-
 #include "sql/parser/value.h"
 
 class Expression;
@@ -38,6 +37,7 @@ enum class ExprType {
   COMPARISON,  ///< 需要做比较的表达式
   CONJUNCTION, ///< 多个表达式使用同一种关系(AND或OR)来联结
   ARITHMETIC,  ///< 算术运算
+  
   NAMED,       ///< 聚合操作
   FUNCTION,    ///< 函数操作
   CONTAIN,     ///< in和not in操作
@@ -62,6 +62,7 @@ enum class ArithmeticType {
   NEGATIVE,
 };
 
+
 enum class FunctionType {
   LENGTH,
   ROUND,
@@ -72,6 +73,7 @@ enum class ContainType {
   IN,
   NOT_IN,
 };
+
 
 enum class Order {
   ASC,
@@ -86,6 +88,7 @@ enum class Order {
  * @brief 描述比较运算符
  * @ingroup SQLParser
  */
+
 enum CompOp {
   EQUAL_TO,    ///< "="
   LESS_EQUAL,  ///< "<="
@@ -103,6 +106,7 @@ struct ValueExprSqlNode;
 struct ComparisonExprSqlNode;
 struct ConjunctionExprSqlNode;
 struct ArithmeticExprSqlNode;
+
 struct AggregationExprSqlNode;
 struct NamedExprSqlNode;
 struct FunctionExprSqlNode;
@@ -124,6 +128,7 @@ private:
     ComparisonExprSqlNode *comparison;
     ConjunctionExprSqlNode *conjunction;
     ArithmeticExprSqlNode *arithmetic;
+
     NamedExprSqlNode *named;
     FunctionExprSqlNode *function;
     ContainExprSqlNode *contain;
@@ -142,6 +147,7 @@ public:
   ExprSqlNode(ComparisonExprSqlNode *comparison) : type_(ExprType::COMPARISON) { expr_.comparison = comparison; }
   ExprSqlNode(ConjunctionExprSqlNode *conjunction) : type_(ExprType::CONJUNCTION) { expr_.conjunction = conjunction; }
   ExprSqlNode(ArithmeticExprSqlNode *arithmetic) : type_(ExprType::ARITHMETIC) { expr_.arithmetic = arithmetic; }
+
   ExprSqlNode(NamedExprSqlNode *named) : type_(ExprType::NAMED) { expr_.named = named; }
   ExprSqlNode(FunctionExprSqlNode *function) : type_(ExprType::FUNCTION) { expr_.function = function; }
   ExprSqlNode(ContainExprSqlNode *contain) : type_(ExprType::CONTAIN) { expr_.contain = contain; }
@@ -159,6 +165,7 @@ public:
   ComparisonExprSqlNode *get_comparison() const { return expr_.comparison; }
   ConjunctionExprSqlNode *get_conjunction() const { return expr_.conjunction; }
   ArithmeticExprSqlNode *get_arithmetic() const { return expr_.arithmetic; }
+
   NamedExprSqlNode *get_named() const { return expr_.named; }
   FunctionExprSqlNode *get_function() const { return expr_.function; }
   ContainExprSqlNode *get_contain() const { return expr_.contain; }
@@ -218,6 +225,7 @@ struct ArithmeticExprSqlNode {
       : type(type), left(get_expr_pointer(left)), right(get_expr_pointer(right)) {}
   ~ArithmeticExprSqlNode();
 };
+
 
 enum class NamedType {
   AGGREGATION,
