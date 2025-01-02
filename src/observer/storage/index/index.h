@@ -59,6 +59,7 @@ public:
 
   /**
    * @brief 创建一个索引数据的扫描器
+   *
    * @param left_key 要扫描的左边界
    * @param left_len 左边界的长度
    * @param left_inclusive 是否包含左边界
