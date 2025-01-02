@@ -4,6 +4,7 @@
 #include "sql/operator/physical_operator.h"
 #include <memory>
 class SortPhysicalOperator : public PhysicalOperator {
+  
 public:
   using Record = std::vector<Value>;
   PhysicalOperatorType type() const override { return PhysicalOperatorType::SORT; }

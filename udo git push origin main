@@ -1,0 +1,281 @@
+[33mcommit 170e2badbace7e7ce81b98a494390d8c54bae676[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Lxy111014 <lvxinyue6424@foxmail.com>
+Date:   Thu Jan 2 22:36:37 2025 +0800
+
+    newproject
+
+[33mcommit a7501d56260f30d0d78c90a7ce30fadbd9cfbc62[m
+Author: Lxy111014 <lvxinyue6424@foxmail.com>
+Date:   Wed Jan 1 23:05:21 2025 +0800
+
+    new
+
+[33mcommit 2e09fcf8932f447a453199eb729c55c4139a5249[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Thu Oct 19 18:28:16 2023 +0800
+
+    完善sql_debug输出信息
+
+[33mcommit ce0b10f63aeb0bdfb09696a35a11ea793c29e429[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Thu Oct 19 18:15:24 2023 +0800
+
+    删掉一些sql_debug
+
+[33mcommit ede577be2dce0cf0ec1b90570bf939df4f73a746[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Thu Oct 19 17:49:55 2023 +0800
+
+    sql_debug on
+
+[33mcommit 267756ac868a7c13310715a650960d2f1b25b2eb[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Thu Oct 19 10:33:34 2023 +0800
+
+    sql-debug patch
+
+[33mcommit 6e2d06c9edf7d61673b9cff5668f3cdacb3718eb[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Thu Oct 19 09:02:11 2023 +0800
+
+    修复mvcc bug
+
+[33mcommit a128ae6a11f68de088c285ed1e64fd996d348c30[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Thu Oct 19 08:49:53 2023 +0800
+
+    删掉默认输出sql_debug
+
+[33mcommit 80cffa6c2e1f69b95fbc991fc2ac0b583e1648cc[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Wed Oct 18 21:46:17 2023 +0800
+
+    给update添加sql_debug
+
+[33mcommit 41ec28829856cdeaa8ad87ce07a70e519588db3b[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Wed Oct 18 17:35:10 2023 +0800
+
+    mvcc bug修复
+
+[33mcommit 0ddf3d4be3565749dd8d9007a830d41630b1b792[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Wed Oct 18 13:17:23 2023 +0800
+
+    修改mvcc下update的bug
+
+[33mcommit 162532e4835945a14a40ea3e83cb471332afe162[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Wed Oct 18 11:50:01 2023 +0800
+
+    order by desc对null的处理
+
+[33mcommit e9e215888be4e6c426558903b995a9755da83667[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Wed Oct 18 11:19:04 2023 +0800
+
+    修改order by对NULL的处理
+
+[33mcommit 07da157cf22d97c05215b6ee4af18a0b07efaf7a[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Wed Oct 18 11:03:32 2023 +0800
+
+    处理多个update针对不同行数据的并行实现
+
+[33mcommit 1cfec555ae2ad61ba2a237a3086a1ef975353fa4[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Wed Oct 18 09:16:38 2023 +0800
+
+    将默认trx修改为Vacuous
+
+[33mcommit 164eb2b4e0aa5d97de109690338ba2280be3e6ec[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Wed Oct 18 09:07:11 2023 +0800
+
+    text大小超过65535则报错
+
+[33mcommit 49fa4c992bf6e54a1b69472a6ea009c0c7dff3fc[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 20:54:08 2023 +0800
+
+    修改text存储方式中的bug
+
+[33mcommit 5c4f2e3bf6344bbbdb9313bab65b5adafb867ba2[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 20:47:06 2023 +0800
+
+    修复建表时字段没有长度的问题
+
+[33mcommit fec1e0d5a226421ae04169c3005e10dfc5801932[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 20:30:23 2023 +0800
+
+    求avg的时候使用double
+
+[33mcommit 945e41059d6a77e74f6610bc57180c8efef144ef[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 19:48:25 2023 +0800
+
+    修改text长度
+
+[33mcommit e65548ccc85ed9e0a68e49ce3e27cd9919fb8238[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 18:58:33 2023 +0800
+
+    增加对非保留关键字的支持
+
+[33mcommit 9203fed45b1effd1db9451575cd4a57834c9fa58[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 17:59:53 2023 +0800
+
+    提高server端的接受能力
+
+[33mcommit d5b04a621b65a285a29b85d23283a6b615281015[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 17:55:36 2023 +0800
+
+    增加输入buffer的长度
+
+[33mcommit 50f049ee126d6ac29f1f9467d5a4acb4cab035ca[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 17:42:44 2023 +0800
+
+    将avg修改为求和
+
+[33mcommit 554b21585aefa11e4a42c34c45ac35c7a90bff96[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 17:37:30 2023 +0800
+
+    将 create-table-select中的as设为可选
+
+[33mcommit 62c3ee5f1a4942121fa3505421969fc0338bd2af[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 17:21:07 2023 +0800
+
+    暂时完成create table
+
+[33mcommit 405b654fe7eeed50c456e6da4aa6e2982896d4af[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 12:29:32 2023 +0800
+
+    修复update字符串过短的问题
+
+[33mcommit 23a34c47200feabcbc6883a3733d1edd133d9a0e[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 12:09:55 2023 +0800
+
+    让update对超长字符串返回报错
+
+[33mcommit 4d360cf7a75cb4176ce57601374ae631ad711e98[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 12:02:07 2023 +0800
+
+    格式化代码
+
+[33mcommit 85179cfbe9466a371e0b9d673442e8aae5e73dd6[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 12:01:42 2023 +0800
+
+    去除nullable关键字，使用null
+
+[33mcommit 431ba632de049a2764decaf83be709e2066774f6[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 11:58:09 2023 +0800
+
+    chars 插入对于超过长度的字符串报错
+
+[33mcommit cd7e0984b43b6c194f44d5a1395b6007a4ae241c[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 17 11:52:21 2023 +0800
+
+    修复date_format对11/12/13的处理
+
+[33mcommit ee54a8523052a3841adb2d14ba3016d9ff414619[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 10 09:45:51 2023 +0800
+
+    从已过代码中checkout出update_physical_operator
+
+[33mcommit ae2daa6832b56a155e4309062763f23be7631e29[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 10 08:58:54 2023 +0800
+
+    修复编译错误
+
+[33mcommit 6f4b7164f50c2ecde9824c2c6cf52e29816e47d3[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Tue Oct 10 08:55:35 2023 +0800
+
+    simple_trx redo笔误
+
+[33mcommit 3f1adcc98d7a3bac289bf55498ce0c94151d3a24[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Mon Oct 9 23:16:34 2023 +0800
+
+    再次修改operations存储方式
+
+[33mcommit 43d8b3fbb0abcb860160f9a6817ab2c9db9bb3f5[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Mon Oct 9 20:49:21 2023 +0800
+
+    修复笔误
+
+[33mcommit 9a6bc04cc249fec38f69065fbbce38cfdad9a3ef[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Mon Oct 9 20:34:14 2023 +0800
+
+    修复update参数大小问题
+
+[33mcommit 566ab0ead6100b1b892f695a387495992b80f5db[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Mon Oct 9 19:59:58 2023 +0800
+
+    小修小补
+
+[33mcommit d71d4594b0a4eb37273803ff02e6e2c26189e85f[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Mon Oct 9 18:34:55 2023 +0800
+
+    simple_trx bug修复
+
+[33mcommit 70bb16929d9711af0063aa4a9e178a2f5f1ae18c[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Mon Oct 9 16:22:43 2023 +0800
+
+    完成clog
+
+[33mcommit 4da1fce4707bb30a2be7e5bec49035e750d205db[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Mon Oct 9 15:28:36 2023 +0800
+
+    实现simple_trx
+
+[33mcommit 850b289d299ad2146e175f5cb0f61a0d1d3eac3d[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Mon Oct 9 10:44:22 2023 +0800
+
+    format code
+
+[33mcommit 611c436ead8cfdad938218bc47e28542d3e12510[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Mon Oct 9 10:38:26 2023 +0800
+
+    修复function对非法日期的支持
+
+[33mcommit 1617686778672dd83cdcae2d7a5695434cd421e4[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Mon Oct 9 10:29:27 2023 +0800
+
+    继续修改null和unique
+
+[33mcommit f562f58f942bae43b52a3fb0e52612a5f397635d[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Mon Oct 9 10:11:19 2023 +0800
+
+    修复date的format
+
+[33mcommit 3e5df00f6f5b4e00f03b8f1f9ff6fc8a85998c39[m
+Author: zhaoyiping <zhaoyiping0622@gmail.com>
+Date:   Mon Oct 9 09:56:22 2023 +0800
+
+    修�

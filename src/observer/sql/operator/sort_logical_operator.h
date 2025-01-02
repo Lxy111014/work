@@ -7,6 +7,7 @@
 #include <memory>
 #include <utility>
 class SortLogicalOperator : public LogicalOperator {
+
 public:
   LogicalOperatorType type() const { return LogicalOperatorType::SORT; }
 
@@ -18,4 +19,5 @@ public:
 private:
   std::vector<Order> orders_;
   std::shared_ptr<TupleSchema> schema_;
+
 };

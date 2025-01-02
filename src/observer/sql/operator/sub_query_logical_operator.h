@@ -4,6 +4,7 @@
 #include <utility>
 
 class SubQueryLogicalOperator : public LogicalOperator {
+
 public:
   SubQueryLogicalOperator(std::unique_ptr<LogicalOperator> &get_operator) { main_oper_ = std::move(get_operator); }
   LogicalOperatorType type() const override { return LogicalOperatorType::SUB_QUERY; }
@@ -17,4 +18,5 @@ public:
 private:
   std::unique_ptr<LogicalOperator> main_oper_;
   std::vector<std::string> names_;
+  
 };

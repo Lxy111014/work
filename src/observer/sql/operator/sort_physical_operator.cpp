@@ -5,6 +5,7 @@
 #include <utility>
 
 RC SortPhysicalOperator::open(Trx *trx) {
+
   if (children_.size() != 1) {
     LOG_WARN("sort physical operator has %d children", children_.size());
     return RC::INTERNAL;
@@ -14,10 +15,12 @@ RC SortPhysicalOperator::open(Trx *trx) {
 }
 
 RC SortPhysicalOperator::next(Tuple *env_tuple) {
+  
   if (idx_ == -1) {
     init(env_tuple);
   }
   idx_++;
+  
   if (idx_ == values_.size())
     return RC::RECORD_EOF;
   tuple_.set_cells(values_[idx_].second);
